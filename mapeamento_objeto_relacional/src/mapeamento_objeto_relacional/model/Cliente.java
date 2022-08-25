@@ -1,12 +1,12 @@
 package mapeamento_objeto_relacional.model;
 
-import java.util.List;
+import java.util.Collection;
 
 public class Cliente {
 	private long id;
 	private String nome;
 	private String endereco;
-	private List<Pedido> pedidos; // 1 para n, aqui salvamos os n pedidos de um cliente
+	private Collection<Pedido> pedidos; // 1 para n, aqui salvamos os n pedidos de um cliente
 
 	public Cliente() {
 		super();
