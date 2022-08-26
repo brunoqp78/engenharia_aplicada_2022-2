@@ -1,4 +1,4 @@
-package mapeamento_objeto_relacional.model;
+package model;
 
 import java.util.Collection;
 
