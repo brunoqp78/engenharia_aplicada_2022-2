@@ -1,18 +1,18 @@
-package model;
+package model.SistemaVendas;
 
 import java.util.Collection;
 
 public class Cliente {
 	private long id;
 	private String nome;
-	private String endereco;
+	private Endereco endereco;
 	private Collection<Pedido> pedidos; // 1 para n, aqui salvamos os n pedidos de um cliente
 
 	public Cliente() {
 		super();
 	}
 
-	public Cliente(long id, String nome, String endereco) {
+	public Cliente(long id, String nome, Endereco endereco) {
 		super();
 		this.id = id;
 		this.nome = nome;
@@ -35,12 +35,22 @@ public class Cliente {
 		this.nome = nome;
 	}
 
-	public String getEndereco() {
+	public Endereco getEndereco() {
 		return endereco;
 	}
 
-	public void setEndereco(String endereco) {
+	public void setEndereco(Endereco endereco) {
 		this.endereco = endereco;
 	}
+
+	public Collection<Pedido> getPedidos() {
+		return pedidos;
+	}
+
+	public void setPedidos(Collection<Pedido> pedidos) {
+		this.pedidos = pedidos;
+	}
+
+	
 
 }
